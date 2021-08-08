@@ -60,4 +60,8 @@ public class Category extends BaseObservable {
     }
 
 
+    @Override
+    public String toString() {
+        return this.categoryName;
+    }
 }
