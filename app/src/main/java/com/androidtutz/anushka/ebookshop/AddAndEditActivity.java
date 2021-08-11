@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -36,7 +35,7 @@ public class AddAndEditActivity extends AppCompatActivity {
 
         Intent intent=getIntent();
         if(intent.hasExtra(BOOK_ID)){
-            Log.i("BookIdTest"," at 3 id is "+intent.getIntExtra(BOOK_ID,0));
+
              setTitle("Edit Book");
              book.setBookName(intent.getStringExtra(BOOK_NAME));
              book.setUnitPrice(intent.getStringExtra(UNIT_PRICE));
