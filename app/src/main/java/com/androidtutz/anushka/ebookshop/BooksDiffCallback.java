@@ -31,6 +31,10 @@ public class BooksDiffCallback extends DiffUtil.Callback {
         return oldBooksList.get(oldBookPosition).getBookId()==newBooksList.get(newBookPosition).getBookId();
     }
 
+
+
+
+
     @Override
     public boolean areContentsTheSame(int oldBookPosition, int newBookPosition) {
         return oldBooksList.get(oldBookPosition).equals(newBooksList.get(newBookPosition));
